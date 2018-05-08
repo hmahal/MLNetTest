@@ -13,8 +13,8 @@ namespace SentimentAnalysis
     class Program
     {
         //Global variables set to the path of the data
-        const string _datapath = @"..\..\..\data\imdb_labelled.txt";
-        const string _testDataPath = @"..\..\..\data\yelp_labelled.txt";
+        const string _datapath = @"..\..\data\imdb_labelled.txt";
+        const string _testDataPath = @"..\..\data\yelp_labelled.txt";
 
         static void Main(string[] args)
         {
@@ -81,6 +81,7 @@ namespace SentimentAnalysis
             Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
             Console.WriteLine($"Auc: {metrics.Auc:P2}");
             Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
+            Console.ReadLine();
         }
     }
 }
