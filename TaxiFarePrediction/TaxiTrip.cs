@@ -16,7 +16,7 @@ namespace TaxiFarePrediction
         public float trip_distance;
         [Column(ordinal: "5")]
         public string payment_type;
-        [Column(ordinal: "6", name: "Label")]
+        [Column(ordinal: "6")]
         public float fare_amount;
     }
 

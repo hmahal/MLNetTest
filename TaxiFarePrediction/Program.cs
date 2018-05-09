@@ -54,8 +54,8 @@ namespace TaxiFarePrediction
             var testData = new TextLoader<TaxiTrip>(_testDataPath, useHeader: true, separator: ",");
             var evaluator = new RegressionEvaluator();
             RegressionMetrics metrics = evaluator.Evaluate(model, testData);
-            Console.WriteLine("Rms =" + metrics.Rms);
-            Console.WriteLine("RSquared =" + metrics.RSquared);
+            Console.WriteLine("Rms = " + metrics.Rms);
+            Console.WriteLine("RSquared = " + metrics.RSquared);
         }
     }
 
