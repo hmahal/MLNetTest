@@ -18,6 +18,7 @@ namespace SentimentAnalysis
 
         static void Main(string[] args)
         {
+            //Classification Tutorial with a Sentiment Classification Example
             var model = TrainAndPredict();
             Evalauate(model);
         }
